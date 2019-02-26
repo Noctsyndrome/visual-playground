@@ -3,6 +3,7 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/animejs">Animejs</router-link> |
+      <router-link to="/webgl">WebGL</router-link> |
       <router-link to="/threejs">Threejs</router-link>
     </div>
     <router-view/>

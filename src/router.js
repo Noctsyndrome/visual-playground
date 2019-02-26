@@ -14,18 +14,17 @@ export default new Router({
     {
       path: '/animejs',
       name: 'animejs',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/Anime.vue')
+    },
+    {
+      path: '/webgl',
+      name: 'webgl',
+      component: () => import(/* webpackChunkName: "about" */ './views/WebGL.vue')
     },
     {
       path: '/threejs',
       name: 'threejs',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/Three.vue')
-    }    
+    },    
   ]
 })
